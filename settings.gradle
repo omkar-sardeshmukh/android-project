@@ -6,8 +6,4 @@ pluginManagement {
     }
 }
 
-dependencyResolution {
-    eagerlyLoadCache = false
-}
-
 rootProject.name = 'SecureLockdown'
