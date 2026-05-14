@@ -1,1 +1,13 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolution {
+    eagerlyLoadCache = false
+}
+
 rootProject.name = 'SecureLockdown'
