@@ -1,25 +1,38 @@
 plugins {
-    id 'java-library'
+    id 'com.android.application'
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
-
-// Add test source directories
-sourceSets {
-    test {
-        java {
-            srcDirs = ['./']
+android {
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "com.example.securelockdown"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
         }
     }
+    
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+    
+    namespace "com.example.securelockdown"
 }
 
-// No external dependencies - tests are standalone
 dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
 
 repositories {
+    google()
     mavenCentral()
 }
