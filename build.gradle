@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+// Add test source directories
+sourceSets {
+    test {
+        java {
+            srcDirs = ['./']
+        }
+    }
+}
+
+// No external dependencies - tests are standalone
+dependencies {
+}
+
+repositories {
+    mavenCentral()
+}

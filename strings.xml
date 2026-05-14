@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Secure Lockdown</string>
+    <string name="admin_receiver_description">Enables device security lockdown when PIN is forgotten</string>
+</resources>
